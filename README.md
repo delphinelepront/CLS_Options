@@ -10,47 +10,46 @@ Connectez-vous sans attendre à l'application, si vous n'êtes pas encore inscri
 
 ### Pré-requis
 
-Ce qu'il est requis pour commencer avec votre projet...
-
-- ?
-- ?
-- etc...
+Pour lancer ce projet sur votre machine c'est très simple il vous faudra seulement un logiciel permettant de créer cet environnement local. Toutes les machines le supporte. Pour participer au projet il vous faudra Git.
 
 ### Installation
 
-Les étapes pour installer le programme....
+- Installez un logiciel de développement qui vous permettra d'avoir un serveur local sur votre machine (_exemple_:MAMP,LAMP,WAMP...etc)
+- Le lancer et s'assurer qu'il tourne bien sur votre machine
+- Télécharger ce git https://github.com/delphinelepront/CLS_Options/
+- Placez ce git ``CLS_Options-master`` dans le fichier repository (_exemple_:www ou htdocs...etc)
+(Ceci peut être fait avec la commande  ``git clone https://github.com/delphinelepront/CLS_Options/``)
 
-Ce qu'il faut faire...
-
-_exemple_: Executez la commande ``commande.php`` pour commencer ensuite [...]
-
-
-Ce que l'on obtient au final...
+Vous êtes finalement prêt à ouvrir le projet dans votre navigateur en local, ainsi qu'à effectuer des modifications sur le code
 
 ## Démarrage
 
-Dites comment faire pour lancer votre projet
+- Lancez MAMP/WAMP/LAMP...etc pour ouvrir un serveur en local sur votre machine
+- Rendez-vous sur votre navigateur
+- Tapez l'url de votre localhost suivi du nom du projet ``CLS_Options-master.php``
 
 ## Fabriqué avec
 
 Entrez les programmes/logiciels/ressources que vous avez utilisé pour développer votre projet
 
 _exemples :_
-* [Materialize.css](http://materializecss.com) - Framework CSS (front-end)
+* [Bootstrap.css](https://getbootstrap.com) - Framework CSS (front-end)
 * [PhpStorm](https://www.jetbrains.com/fr-fr/phpstorm/) - Editeur de textes
+* [VisualStudioCode](https://code.visualstudio.com) - Editeur de textes
+* [MAMP](https://www.mamp.info/) - Environnement serveur local
 
 ## Contributing
 
-Si vous souhaitez contribuer, lisez le fichier [CONTRIBUTING.md](https://example.org) pour savoir comment le faire.
+Si vous souhaitez contribuer, lisez le fichier [CONTRIBUTING.md](https://example.org) pour savoir comment faire.
 
 ## Versions
 En cours de développement
-**Dernière version stable :** 1.0
-**Dernière version :** 1.0
+**Dernière version stable :** 1.x
+**Dernière version :** 1.x
 
 ## Auteurs
 Listez le(s) auteur(s) du projet ici !
-* **Delphone Lepront** _alias_ [@delphinelepront](https://github.com/delphinelepront)
+* **Delphine Lepront** _alias_ [@delphinelepront](https://github.com/delphinelepront)
 * **Louis Chevallier** _alias_ [@louischevallier](https://github.com/louischevallier)
 
 Lisez la liste des [contributeurs](https://github.com/delphinelepront/CLS_Options/contributors) pour voir qui à aidé au projet !
