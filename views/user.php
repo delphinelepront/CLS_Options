@@ -1,35 +1,40 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="utf-8">
-    <title>Profile</title>
-</head>
+<!-- FEATURE -->
+<section id="home" data-stellar-background-ratio="0.5">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row">
 
-<body>
-<div>
-    <h1>Profile View</h1>
-</div>
+            <div class="col-md-offset-2 col-md-8 col-sm-12">
+                <div class="home-info">
+                    <div>
+                        <h1>Informations utilisateurs : </h1>
 
-<p><a href="index.php">Retour</a></p>
+                        <h2>@<?= strtoupper($user->username) ?> (<?= $user->statut ?>)</h2>
+                        <ul>
+                            <li>Nom : <?= $user->nom ?></li>
+                            <li>Prénom <?= $user->prenom ?></li>
+                            <li>Statut : <?= $user->role ?></li>
+                        </ul>
 
-<h3> <?= strtoupper($user->username) ?> (<?= $user->statut ?>) </li></h3>
-    <ul>
-        <li>Prénom <?= $user->prenom ?></li>
-        <li>Nom : <?= $user->nom ?></li>
-        <li>Statut : <?= $user->role ?></li>
-    </ul>
+                        <?php
+                        if (isset($success)) {
+                            echo $success;
+                        }
 
-        <?php
-        if(isset($success)){
-            echo $success;
-        }
+                        if (!empty($errors)):?>
+                            <?php foreach ($errors as $error): ?>
+                                <p><?= $error ?></p>
+                            <?php endforeach; ?>
+                        <?php endif; ?>
 
-        if(!empty($errors)):?>
-            <?php foreach($errors as $error): ?>
-            <p><?= $error ?></p>
-            <?php  endforeach; ?>
-        <?php endif; ?>
-    
-</div>
-</body>
-</html>
+
+                    </div>
+                    <br/>
+
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>

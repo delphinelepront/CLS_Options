@@ -16,12 +16,11 @@
                             <h2 style="text-align: left; margin-top: 10px;">Mes projets en cours :</h2>
                             <ul style="list-style-type: none;">
                                 <?php foreach ($idProjectUser as $projectUser): ?>
-                                    <li style="border: solid; border-width: 1px; border-radius: 30px; text-align: left; background-color: #1C846C; opacity: 0.5; color: white; font-size: 20px; padding-left: 10%;margin-bottom: 10px;"><a href="project.php?id=<?= $projectUser->id ?>"><?= $projectUser->name ?></a></li>
+                                    <li style="border: solid; padding-bottom: 10px; padding-top: 10px; border-width: 1px; border-radius: 30px; text-align: left; background-color: #1C846C; opacity: 0.5; color: white; font-size: 20px; padding-left: 10%;margin-bottom: 10px;"><a href="project.php?id=<?= $projectUser->id ?>"><?= $projectUser->name ?></a></li>
                                 <?php endforeach; ?>
                             </ul>
                         </div>
                     <?php
-                        require 'test2.php';
                         }
                     ?>
                 </div>
@@ -30,40 +29,3 @@
         </div>
     </div>
 </section>
-
-<!--
-<div>
-    <h2>Parcourir les users</h2>
-    <ul>
-
-        <?php
-        var_dump($idProjectUser);
-        foreach ($users as $user): ?>
-            <li><a href="user.php?id=<?= $user->id ?>"><?= $user->username ?></a></li>
-        <?php endforeach; ?>
-    </ul>
-</div><br/>
-
-<div>
-    <h2>Parcourir les projets</h2>
-    <?php foreach ($projects as $projet): ?>
-        <ul>
-            <li><a href="project.php?id=<?= $projet->id ?>"><?= $projet->name ?></a></li>
-            <li><?= $projet->description ?></li>
-            <li><?= $projet->dateCreation ?></li>
-            <li><?= $projet->statutProject ?></li>
-
-            <?php
-            $idCreator = $projet->id_users;
-            $creator = getProjectCreator($idCreator);
-            ?>
-            <li>Créé par <a href="user.php?id=<?= $projet->id_users ?>"><?= $creator->username ?></a></li>
-        </ul>
-        <hr>
-    <?php endforeach; ?>
-</div><br/>
-
-</div>
-</body>
-</html>
--->
