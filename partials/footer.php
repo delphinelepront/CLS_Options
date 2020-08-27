@@ -1,12 +1,12 @@
 
 
 <!-- SCRIPTS -->
-<script src="Public/js/jquery.js"></script>
-<script src="Public/js/bootstrap.min.js"></script>
-<script src="Public/js/jquery.stellar.min.js"></script>
-<script src="Public/js/owl.carousel.min.js"></script>
-<script src="Public/js/smoothscroll.js"></script>
-<script src="Public/js/custom.js"></script>
+<script src="public/js/jquery.js"></script>
+<script src="public/js/bootstrap.min.js"></script>
+<script src="public/js/jquery.stellar.min.js"></script>
+<script src="public/js/owl.carousel.min.js"></script>
+<script src="public/js/smoothscroll.js"></script>
+<script src="public/js/custom.js"></script>
 
 </body>
 <!-- FOOTER -->
