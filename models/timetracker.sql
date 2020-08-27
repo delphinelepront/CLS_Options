@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : localhost:8889
--- Généré le :  mer. 26 août 2020 à 18:35
+-- Généré le :  jeu. 27 août 2020 à 12:11
 -- Version du serveur :  5.7.26
 -- Version de PHP :  7.4.2
 
@@ -63,7 +63,17 @@ INSERT INTO `groups_member` (`id`, `id_groups`, `id_users`) VALUES
 (25, 7, 5),
 (26, 7, 9),
 (27, 7, 10),
-(28, 6, 6);
+(28, 6, 6),
+(33, 6, 10),
+(37, 6, 10),
+(38, 6, 10),
+(39, 6, 10),
+(40, 6, 10),
+(41, 9, 10),
+(52, 8, 10),
+(55, 9, 10),
+(57, 8, 10),
+(58, 10, 10);
 
 -- --------------------------------------------------------
 
@@ -179,12 +189,14 @@ INSERT INTO `task_timerecorded` (`id`, `startTime`, `stopTime`, `id_users`, `id_
 (36, '09:30:00', '18:02:00', 7, 14),
 (37, '14:00:00', '18:21:00', 1, 5),
 (38, '14:00:00', '18:11:00', 7, 7),
-(39, '11:23:00', '16:09:00', 2, 6),
+(39, '11:00:00', '16:00:00', 2, 6),
 (40, '14:00:00', '15:44:00', 5, 12),
 (41, '16:51:00', '18:23:00', 11, 15),
-(42, '09:45:00', '12:32:00', 9, 16),
+(42, '09:45:00', '12:00:00', 9, 16),
 (43, '15:34:00', '17:23:00', 2, 11),
-(44, '11:43:00', '14:19:00', 3, 13);
+(44, '11:43:00', '14:19:00', 3, 13),
+(45, '12:05:06', NULL, 7, 15),
+(46, '12:05:06', '12:05:20', 7, 15);
 
 -- --------------------------------------------------------
 
@@ -207,13 +219,13 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `username`, `prenom`, `nom`, `password`, `role`, `statut`) VALUES
-(1, 'max', 'Maxime', 'Julius', '$2y$10$PsjdR3cKPLNplD0TFTuZIOlzlSUvEeAAduBwM/gTvEfbJ1ICf07lu', 'admin', 'online'),
+(1, 'max', 'Maxime', 'Julius', '$2y$10$PsjdR3cKPLNplD0TFTuZIOlzlSUvEeAAduBwM/gTvEfbJ1ICf07lu', 'admin', 'offline'),
 (2, 'lou', 'Louis', 'Dos Santos', '$2y$10$h4MkHtWgR0qdab0pmNQsa.YvpaNoUTfcQaj1hmQBlk.DTExG/R./m', 'membre', 'offline'),
 (3, 'delphi', 'Delphine', 'Lepront', '$2y$10$JBoQbdVJ6FHTGJcvorpbeOZJhuypR8shuXWi368XMpcmt4/wBxnNq', 'membre', 'offline'),
 (4, 'bast', 'Bastien', 'Cordier', '$2y$10$MsTkqecvnzXBJ62x3Lu/i.NzF8upKsyCX/h/mPw0jAfxuc7.JoVfe', 'membre', 'offline'),
 (5, 'jack', 'Jacky', 'Chan', '$2y$10$ORK749xPrNTt0dSEl2k0qOlLfBd8DBfKZhHKlQKlXLt3MeBQusb6q', 'membre', 'online'),
 (6, 'paul', 'Paul', 'Gazol', '$2y$10$Vxdgz5iuJt1pQQeQLRc0MevhG3KZ2YvPcVZeLaTx5jXcZmZGDP8ca', 'membre', 'offline'),
-(7, 'ambre', 'Ambre', 'Carreaux', '$2y$10$XHnw5JqV/eoFhQ5vLDTvAestzdE9DXuoq63eA9lB7maZu..GY3Phu', 'membre', 'offline'),
+(7, 'ambre', 'Ambre', 'Carreaux', '$2y$10$XHnw5JqV/eoFhQ5vLDTvAestzdE9DXuoq63eA9lB7maZu..GY3Phu', 'membre', 'online'),
 (8, 'martin', 'Martin', 'Penders', '$2y$10$wwnxxXfkvTGI2RCdyJMm.eJVLDs43r98aN2XHT9fIDBaDV1fJBDQO', 'membre', 'offline'),
 (9, 'will', 'William', 'Roudin', '$2y$10$G95rEGIS/RxhRVYktkqBuuIVD6idF/JFJrFI9dESUZNJ43BXbTe9m', 'membre', 'offline'),
 (10, 'phil', 'Phillipe', 'Cornet', '$2y$10$fkzmS.9REm37hLkFjqYx/OiD9mQiwGtIImVBBWmZ6zUCAUedeOLdi', 'membre', 'offline'),
@@ -287,7 +299,7 @@ ALTER TABLE `groups`
 -- AUTO_INCREMENT pour la table `groups_member`
 --
 ALTER TABLE `groups_member`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=59;
 
 --
 -- AUTO_INCREMENT pour la table `project`
@@ -311,7 +323,7 @@ ALTER TABLE `task`
 -- AUTO_INCREMENT pour la table `task_timerecorded`
 --
 ALTER TABLE `task_timerecorded`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=45;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=47;
 
 --
 -- AUTO_INCREMENT pour la table `users`
