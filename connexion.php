@@ -36,8 +36,9 @@ if(!empty($_POST)){
         }
         else{
             array_push($errors, 'Mauvais identifiant ou mot de passe');
-            var_dump($username);
-            var_dump($mdp);
+            //var_dump($username);
+            //var_dump($mdp);
+
         }
 
         unset($username);
@@ -46,5 +47,9 @@ if(!empty($_POST)){
 }
 
 ?>
+<?php include ("partials/header.php"); ?>
+
 <?php require 'views/connexion.php'; ?>
+
+<?php include ("partials/footer.php"); ?>
 
