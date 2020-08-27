@@ -163,6 +163,13 @@ http://www.tooplate.com/view/2106-soft-landing
     color: #ffffff;
   }
 
+  th {
+    text-align: center !important;
+  }
+  ul {
+    list-style-type: none;
+  }
+
 
 
   /*---------------------------------------
@@ -340,7 +347,7 @@ http://www.tooplate.com/view/2106-soft-landing
 
   .home-info h3 {
     color: #f0f0f0;
-    font-size: 11px;
+    font-size: 14px;
     font-weight: bold;
     letter-spacing: 4px;
     text-transform: uppercase;
