@@ -11,13 +11,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="Public/css/bootstrap.min.css">
-    <link rel="stylesheet" href="Public/css/owl.carousel.css">
-    <link rel="stylesheet" href="Public/css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="Public/css/font-awesome.min.css">
+    <link rel="stylesheet" href="public/css/bootstrap.min.css">
+    <link rel="stylesheet" href="public/css/owl.carousel.css">
+    <link rel="stylesheet" href="public/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="public/css/font-awesome.min.css">
 
     <!-- MAIN CSS -->
-    <link rel="stylesheet" href="Public/css/style.css">
+    <link rel="stylesheet" href="public/css/style.css">
 
 </head>
 <body>
