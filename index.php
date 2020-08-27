@@ -14,6 +14,8 @@ $groups = getGroups();
 $id_user = $_SESSION['id'];
 $idProjectUser = getProjectUser($id_user);
 
+$id_user = getProjectMemberInGroup($id_user);
+
 ?>
 
 <?php include ("partials/header.php"); ?>
