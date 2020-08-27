@@ -30,6 +30,16 @@
                                 </tbody>
                             </table>
                         </div>
+                        <h1>Ajouter un projet</h1>
+                        <form action="projects.php" method="post">
+                            <p><label for="name">Nom du projet :</label><br/>
+                                <input type="text" name="name" id="name" class="form-control" value="<?php if (isset($username)) echo $username ?>" /></p>
+
+                            <p><label for="description">Description :</label><br/>
+                                <textarea name="description" id="description" class="form-control" cols="30" rows="4"/><?php if (isset($textTask)) echo $textTask ?></textarea></p>
+
+                            <button type="submit" name="addproject">Créer</button>
+                        </form><br/>
 
                     </div><br/>
 
@@ -39,19 +49,4 @@
         </div>
     </div>
 </section>
-<h2>Parcourir les projets</h2>
-<?php foreach ($projects as $projet): ?>
-    <ul>
-        <li><a href="project_info.php?id=<?= $projet->id ?>"><?= $projet->name ?></a></li>
-        <li><?= $projet->description ?></li>
-        <li><?= $projet->dateCreation ?></li>
-        <li><?= $projet->statutProject ?></li>
 
-        <?php
-        $idCreator = $projet->id_users;
-        $creator = getProjectCreator($idCreator);
-        ?>
-        <li>Créé par <a href="user.php?id=<?= $projet->id_users ?>"><?= $creator->username ?></a></li>
-    </ul>
-    <hr>
-<?php endforeach; ?>
