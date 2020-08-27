@@ -90,3 +90,42 @@ function getProjectCreated($idCreator)
     return $data;
     $query->closeCursor();
 }
+
+// /////////////////////////////////////////////
+// FONCTION POUR RECUPERER LES PROJET D'UN USER PROVENANT DE GROUPE(S)
+
+// FONCTION QUI LES ID DE GROUPE DE L'USER RENSEIGNÉ
+function getProjectMemberInGroup($id_user)
+{
+    $db = connect();
+
+    $query = $db->prepare('SELECT * FROM groups_member WHERE id_users = ?');
+    $query->execute(array($id_user));
+    $data = $query->fetchAll(PDO::FETCH_OBJ);
+    return $data;
+    $query->closeCursor();
+}
+
+// FONCTION QUI AMENE L'ID DES PROJETS DES GROUPES QUI Y PARTICIPENT
+function getProjectIdInGroup($id_groups)
+{
+    $db = connect();
+
+    $query = $db->prepare('SELECT * FROM project_groupmember WHERE id_groups = ?');
+    $query->execute(array($id_groups));
+    $data = $query->fetchAll(PDO::FETCH_OBJ);
+    return $data;
+    $query->closeCursor();
+}
+
+// FONCTION QUI AMENE PROJETS DES ID DE GROUPE DONT FAIT PARTIE L'USER
+function getProjectWithFinalId($id_final)
+{
+    $db = connect();
+
+    $query = $db->prepare('SELECT * FROM project WHERE id = ?');
+    $query->execute(array($id_final));
+    $data = $query->fetchAll(PDO::FETCH_OBJ);
+    return $data;
+    $query->closeCursor();
+}
